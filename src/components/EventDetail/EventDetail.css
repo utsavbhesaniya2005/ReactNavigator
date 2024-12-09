@@ -1,0 +1,104 @@
+.event-information .rating > span{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 5px 15px;
+}
+.event-information > ul{
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    padding-bottom: 25px;
+}
+.event-information > ul > li:nth-child(2){
+    margin-left: -35px;
+}
+.event-information > ul li a, .event-information > ul li:nth-child(2) a span{
+    color: var(--normal-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+.event-information > ul li:nth-child(2) a{
+    color: var(--heading-font);
+}
+.event-information > ul li:nth-child(3) a i{
+    color: var(--main-color);
+}
+.event-information ul li:nth-child(3) a::after, .event-information ul li:last-child a::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: rgba(140, 154, 180, 1);
+    left: -25px;
+    top: 25%;
+    transform: translate(-50%, 50%);
+}
+.event-overview .event-desc{
+    font-size: 16px;
+    font-weight: 400;
+}
+.elements .element-img img{
+    height: 270px;
+}
+.elements-desc .event-title h4{
+    line-height: 30px;
+    max-width: 80%;    
+}
+.elements-desc ul li a{
+    color: var(--heading-font);
+    font-weight: 600;
+}
+.elements-desc ul li a i{
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--heading-font);
+    background-color: var(--btn-bg);
+    border: 1px solid var(--heading-font);
+}
+.card{
+    border: 0;
+}
+.fee{
+    background-color: var(--main-color);
+    padding: 15px 20px;
+}
+.event-info > ul > li > a{
+    color: var(--normal-font);
+    font-weight: 400;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+.event-info ul li:nth-child(7){
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    padding-bottom: 25px;
+}
+.event-info ul li:nth-child(7) a{
+    border: none;
+}
+.event-info ul li a .info i{
+    font-size: 18px;
+}
+.event-info ul li a .info span{
+    color: var(--heading-font);
+}
+.social-media ul{
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+.social-media > ul > li > a{
+    display: block;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(230, 233, 239, 1);
+    color: var(--normal-font);
+}
+.event-info > a{
+    margin-left: 25px;    
+}
+.event-info > a:hover{
+    background-color: var(--heading-font);
+    box-shadow: 5px 5px 1px var(--white);
+}

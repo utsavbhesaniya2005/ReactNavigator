@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #5751E1;
+  --main-color-rgb: 87, 81, 225;
+  --heading-font : #161439;
+  --heading-font-rgb : 22, 20, 57;
+  --btn-bg : #FFC224;
+  --btn-bg-rgb : 255, 194, 36;
+  --normal-font : #6D6C80;
+  --normal-font-rgb : 109, 108, 128;
+  --white : #ffffff;
+  --white-rgb : 255, 255, 255;
+  --normal-ff : 'Inter', sans-serif;
+  --heading-ff : 'Poppins', sans-serif;
+  --fw : 600; 
+  --fs : 14px;
+}
+body{
+  color: var(--normal-font);
+  font-size: var(--fs); 
+  font-weight: var(--fw);
+  font-family: var(--normal-ff);
+} 
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+ul,ol{
+  padding: 0;
+  list-style: none;
+}
+hr{
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--heading-font);
+  font-family: var(--heading-ff);
+  font-weight: 600;
+}
+p{
+  color: var(--normal-font);
+  font-weight: 400;
+}
+.my-100{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.mb-100{
+  margin-bottom: 100px;
+}
+.btn-1{
+  display: inline-block;
+  background-color: var(--btn-bg);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--heading-font);
+  font-weight: 600;
+  font-family: var(--heading-ff);
+  transition: all 0.2s linear;
+}
+.btn-1:hover{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.btn-1 i{
+  margin-left: 10px;
+}
+.bg-fit{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn:hover, .btn:active{
+  background-color: transparent;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active, .btn-check:checked+.btn:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible, .btn:first-child:active:focus-visible, :not(.btn-check)+.btn:active:focus-visible{
+  background-color: transparent;
+  color: #000000A6;
+  box-shadow: none;
+}
+
+/* Back-Btn */
+.back-btn{
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-color);
+  color: var(--white);
+  border: 2px solid var(--header-text-color);
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  z-index: 999;
+  bottom: 50px;
+  right: 50px;
+}
