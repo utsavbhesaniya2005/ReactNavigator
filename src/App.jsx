@@ -8,6 +8,10 @@ import './assets/css/media.css'
 import { Route, Routes } from 'react-router'
 import EventDetails from './pages/eventDetails'
 import LatestBlogGrid from './pages/LatestBlogGrid'
+import PageNotFound from './pages/PageNotFound'
+import AllCourses from './pages/AllCourses'
+import CourseDetails from './pages/CourseDetails'
+import ShopPage from './pages/ShopPage'
 
 function App() {
 
@@ -18,6 +22,10 @@ function App() {
         <Route path='/' element={<Home /> }></Route>
         <Route path='/event' element={<EventDetails /> }></Route>
         <Route path='/blog' element={<LatestBlogGrid /> }></Route>
+        <Route path='/allcourse' element={<AllCourses /> }></Route>
+        <Route path='/coursedetail' element={<CourseDetails /> }></Route>
+        <Route path='/shop' element={<ShopPage /> }></Route>
+        <Route path='/*' element={<PageNotFound /> }></Route>
       </Routes>
       <Footer />
     </>

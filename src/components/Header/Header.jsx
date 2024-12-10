@@ -1,5 +1,6 @@
 import { Container, Dropdown, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Header.css';
+import { Link } from 'react-router';
 
 const Header = () => {
     return (
@@ -74,7 +75,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="col-xxl-4 col-xl-3 col-lg-10 col-md-10 col-sm-10 col-10">
+                    <div className="col-xxl-5 col-xl-3 col-lg-10 col-md-10 col-sm-10 col-10">
                         <Navbar expand="lg" className="navbar">
                             <Container>
                                 <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
@@ -95,14 +96,16 @@ const Header = () => {
                                             </Dropdown.Toggle>
 
                                             <Dropdown.Menu>
-                                                <Dropdown.Item href="#/action-1">All Courses</Dropdown.Item>
+                                                <Link to={'/allcourse'} className='dropdown-item'>All Courses</Link>
                                                 <hr />
-                                                <Dropdown.Item href="#/action-2">Course Details</Dropdown.Item>
+                                                <Link to={'/coursedetail'} className='dropdown-item'>Course Details</Link>
                                             </Dropdown.Menu>
                                         </Dropdown>
 
-                                    
-                                        <Dropdown>
+                                        <li className="nav-item">
+                                            <Link to={'/event'} className='nav-link px-3'>Event Details</Link>
+                                        </li>
+                                        {/* <Dropdown>
                                             <Dropdown.Toggle className='nav-link'>
                                                 <span className='me-2'>Pages</span>
                                                 <i className="fa-solid fa-angle-down align-middle"></i>
@@ -117,7 +120,7 @@ const Header = () => {
                                                 <hr />
                                                 <Dropdown.Item href="#/action-4">All Events</Dropdown.Item>
                                                 <hr />
-                                                <Dropdown.Item href="#/action-5">Event Details</Dropdown.Item>
+                                                <Link to={'/event'} className='dropdown-item'>Event Details</Link>
                                                 <hr />
                                                 <Dropdown.Item href="#/action-6">Student Login</Dropdown.Item>
                                                 <hr />
@@ -128,7 +131,7 @@ const Header = () => {
                                                 <Dropdown.Item href="#/action-9">Contact</Dropdown.Item>
                                                 <hr />
                                             </Dropdown.Menu>
-                                        </Dropdown>
+                                        </Dropdown> */}
 
                                         <Dropdown>
                                             <Dropdown.Toggle className='nav-link'>
@@ -137,7 +140,7 @@ const Header = () => {
                                             </Dropdown.Toggle>
 
                                             <Dropdown.Menu>
-                                                <Dropdown.Item href="#/action-1">Shop Page</Dropdown.Item>
+                                                <Link to={'/shop'} className='dropdown-item'>Shop Page</Link>
                                             </Dropdown.Menu>
                                         </Dropdown>
 
@@ -148,9 +151,9 @@ const Header = () => {
                                             </Dropdown.Toggle>
 
                                             <Dropdown.Menu>
-                                                <Dropdown.Item href="#/action-1">Latest Blog Grid</Dropdown.Item>
+                                                <Link to="/blog" className='dropdown-item'>Latest Blog Grid</Link>
                                                 <hr />
-                                                <Dropdown.Item href="#/action-2">Blog Details</Dropdown.Item>
+                                                {/* <Dropdown.Item href="#/action-2">Blog Details</Dropdown.Item> */}
                                             </Dropdown.Menu>
                                         </Dropdown>
 
@@ -160,8 +163,8 @@ const Header = () => {
                         </Navbar>
                     </div>
 
-                    <div className="col-xxl-6 col-xl-4">
-                        <div className="search d-flex align-items-center ps-5">
+                    <div className="col-xxl-5 col-xl-4">
+                        <div className="search d-flex align-items-center">
                             <div className="input-group rounded-pill">
                                 <a href="#" className="input-group-text rounded-start-pill d-flex align-items-center column-gap-2" style={{ backgroundColor: 'white' }}>
                                     <i className="fa-solid fa-border-all"></i>

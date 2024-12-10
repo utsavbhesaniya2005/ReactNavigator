@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Tab, Tabs } from "react-bootstrap";
+import './GridDetails.css'
 
 const blogPosts = [
     {
@@ -59,8 +60,8 @@ const GridDetails = () => {
                         <div className="col-9">
                             <div className="row">
                                 <div className="col-11">
-                                    <Tabs id="controlled-tab-example" activeKey={key} onSelect={(k) => setKey(k)} className="mb-3">
-                                        <Tab className="tab-pane fade mb-5" eventKey="one" title="1">
+                                    <Tabs id="controlled-tab-example" activeKey={key} onSelect={(k) => setKey(k)} className="mb-3 justify-content-center">
+                                        <Tab className="tab-pane fade mb-5 grid-link" eventKey="one" title="1">
                                             <div className="row row-gap-4">
                                                 {blogPosts.map((post, index) => (
                                                     <div className="col-4" key={index}>
@@ -170,22 +171,6 @@ const GridDetails = () => {
                                         </Tab>
                                     </Tabs>
                                 </div>
-                                <div className="col-12">
-                                    <ul className="nav nav-tabs blog-tabs justify-content-center" id="myTab" role="tablist">
-                                        <li className="nav-item" role="presentation">
-                                          <button className="nav-link grid-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first-tab-pane" type="button" role="tab" aria-controls="first-tab-pane" aria-selected="true">1</button>
-                                        </li>
-                                        <li className="nav-item" role="presentation">
-                                          <button className="nav-link grid-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second-tab-pane" type="button" role="tab" aria-controls="second-tab-pane" aria-selected="false">2</button>
-                                        </li>
-                                        <li className="nav-item" role="presentation">
-                                          <button className="nav-link grid-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third-tab-pane" type="button" role="tab" aria-controls="third-tab-pane" aria-selected="false">3</button>
-                                        </li>
-                                        <li className="nav-item" role="presentation">
-                                            <button className="nav-link grid-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth-tab-pane" type="button" role="tab" aria-controls="fourth" aria-selected="false">4</button>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <div className="col-3">
@@ -252,7 +237,7 @@ const GridDetails = () => {
                                             <a href="#">
                                                 <div className="posts d-flex justify-content-start column-gap-3">
                                                     <div className="post-img">
-                                                        <img src="./assets/images/Latest-Blogs-Page/latest-post-1.jpg" alt="Latest Post" />
+                                                        <img src="../src/assets/images/Latest-Blogs-Page/latest-post-1.jpg" alt="Latest Post" />
                                                     </div>
                                                     <div className="post-text">
                                                         <a href="#">
@@ -268,7 +253,7 @@ const GridDetails = () => {
                                             <a href="#">
                                                 <div className="posts d-flex justify-content-start column-gap-3">
                                                     <div className="post-img">
-                                                        <img src="./assets/images/Latest-Blogs-Page/latest-post-2.jpg" alt="Latest Post" />
+                                                        <img src="../src/assets/images/Latest-Blogs-Page/latest-post-2.jpg" alt="Latest Post" />
                                                     </div>
                                                     <div className="post-text">
                                                         <a href="#">
@@ -285,7 +270,7 @@ const GridDetails = () => {
                                             <a href="#">
                                                 <div className="posts d-flex justify-content-start column-gap-3">
                                                     <div className="post-img">
-                                                        <img src="./assets/images/Latest-Blogs-Page/latest-post-3.jpg" alt="Latest Post" />
+                                                        <img src="../src/assets/images/Latest-Blogs-Page/latest-post-3.jpg" alt="Latest Post" />
                                                     </div>
                                                     <div className="post-text">
                                                         <a href="#">
@@ -301,7 +286,7 @@ const GridDetails = () => {
                                             <a href="#">
                                                 <div className="posts d-flex justify-content-start column-gap-3">
                                                     <div className="post-img">
-                                                        <img src="./assets/images/Latest-Blogs-Page/latest-post-4.jpg" alt="Latest Post" />
+                                                        <img src="../src/assets/images/Latest-Blogs-Page/latest-post-4.jpg" alt="Latest Post" />
                                                     </div>
                                                     <div className="post-text">
                                                         <a href="#">
